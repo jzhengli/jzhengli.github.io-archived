@@ -1,4 +1,120 @@
-h1{
-    color: #ff0000;
-    font-size: 30px;
+/***** NAVBAR *****/
+.navbar-default {
+  background-color: #4169E1;
+  border-radius: 0;
+  background-image: none;
+}
+
+/* Navbar title */
+.navbar-default .navbar-brand {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Navbar hover effects */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #001A57;
+}
+
+/* Navbar links */
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Navbar collapsed styles */
+.navbar-header .navbar-toggle {
+  color: #fff;
+}
+
+.navbar-header .navbar-toggle:hover,
+.navbar-header .navbar-toggle:focus {
+  background-color: #001A57;
+  color: #fff;
+}
+
+/*** Portfolio pieces ***/
+.portfolio-thumbnail {
+  background-color: #fff;
+  border-color: #4169E1;
+  border-width: 2px;
+  width: 95%;
+}
+
+.portfolio-thumbnail:hover {
+  border-color: #ebd122;
+  border-width: 5px;
+}
+
+.portfolio-title {
+  font-weight: bold;
+}
+
+.portfolio-description {
+}
+
+.portfolio-image {
+}
+
+
+/*** Contact pieces ***/
+.contact-thumbnail{
+  background-color: transparent;
+  border-color: transparent;
+  border-width: 0px;
+  width: 50%;
+}
+.contact-thumbnail:hover{
+  border-color: #ebd122;
+  border-width: 3px;
+}
+
+/*** Map pieces ***/
+#mapid { height: 350px; }
+
+
+#about-world {
+  max-height: 200px;
+}
+
+.resume h3 {
+  font-weight: bold;
+}
+
+hr {
+  border-color: #4169E1;
+  border-width: 2px;
+}
+
+p {
+  font-size: 20px;
+}
+
+a {
+  color: #4169E1;
+}
+
+a:hover {
+  color: #ebd122;
+}
+
+.jumbotron {
+  text-align: center;
+  color: #001A57;
+  background-color: transparent;
+}
+
+.jumbotron h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f1f1f1;
+  color: #242424;
 }

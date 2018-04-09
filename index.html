@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Title</title>
-        <link rel="stylesheet", href="css/style.css" />
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="keywords" content="maps, gis, cartography"/>
+        <title>Zheng Li | Home</title>
+        
+		<!--put your Bootstrap stylesheet links below this comment and above style.css-->
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+        <link rel="stylesheet" href="css/style.css" />
+        
+        <!--leaflet files-->
+         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
+         <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"   integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
+        
     </head>
     <body>
-    <h1>My Heading</h1>
-    <p>This is a test page</p>
-    </boy>
+        <!--map to show my location-->
+        <div class="container-fluid">
+            <div class="row">
+                <div id="mapid">
+                    <script>
+                        var mymap = L.map('mapid').setView([35.226915, -80.839151], 10);
+                        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', 
+                                    {attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>', maxZoom: 10, 
+                                    id: 'mapbox.streets', 
+                                    accessToken:'pk.eyJ1IjoiemxpLXdpc2MiLCJhIjoiY2pjdHVwNjc5MDJ0bDJxbWpmOHllejYweiJ9.zsVQQz34Ie2vf5Ma6dDs_A'}).addTo(mymap);
+                        var marker = L.marker([35.226915, -80.839151]).addTo(mymap);
+                    </script>    
+                </div>
+            </div>
+        </div>
+        <!--navbar-->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                        <span class="menu">Menu</span>
+                    </button>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="aboutme.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a> </li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--My name-->
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Zheng Li (Joe)</h1>
+                <h3>Welcome to my page!</h3>
+            </div>
+        </div>
+        <!-- end #content -->
+            <footer>
+                <p>©Zheng Li</p>
+                <p>Last updated: April 09, 2018</p>
+            </footer>
+        <!-- end #wrapper -->
+        
+        <!--external script-->
+        <script type="text/javascript" src="lib/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="lib/bootstrap.min.js"></script>	
+ </body>
 </html>
